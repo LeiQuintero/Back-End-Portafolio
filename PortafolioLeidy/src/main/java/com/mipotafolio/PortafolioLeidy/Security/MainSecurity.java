@@ -5,7 +5,7 @@ package com.mipotafolio.PortafolioLeidy.Security;
 
 
 
-import com.mipotafolio.PortafolioLeidy.Security.Service.UserDetailsImpl;
+//import com.mipotafolio.PortafolioLeidy.Security.Service.UserDetailsImpl;
 import com.mipotafolio.PortafolioLeidy.Security.jwt.JwtEntryPoint;
 import com.mipotafolio.PortafolioLeidy.Security.jwt.JwtTokenFilter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,8 +31,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 // VERSION MODIFICADA DE LA ORIGINAL PARA springboot 2.7.1
 public class MainSecurity {
-    @Autowired
-    UserDetailsImpl userDetailsServiceImpl;
+    //@Autowired
+    //UserDetailsImpl userDetailsServiceImpl;
 
     @Autowired
     JwtEntryPoint jwtEntryPoint;

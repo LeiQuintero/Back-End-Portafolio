@@ -21,10 +21,9 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-
 public class JwtTokenFilter extends OncePerRequestFilter {
 
-    private final static Logger logger = LoggerFactory.getLogger(JwtProvider.class);
+    private final static Logger loggerr = LoggerFactory.getLogger(JwtProvider.class);
 
     @Autowired
     JwtProvider jwtProvider;
@@ -43,7 +42,7 @@ public class JwtTokenFilter extends OncePerRequestFilter {
                 SecurityContextHolder.getContext().setAuthentication(auth);
             }
         } catch (Exception e) {
-            logger.error("Falló el método doFilterInternal");
+            loggerr.error("Falló el método doFilterInternal");
         }
         filterChain.doFilter(request, response);
     }
