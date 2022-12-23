@@ -5,7 +5,8 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.6</version> 
+                <!--version>2.7.6</version-->
+		<version>2.7.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mipotafolio</groupId>
@@ -37,9 +38,10 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-			<groupId>com.mysql</groupId>
-			<artifactId>mysql-connector-j</artifactId>
-                        <!--artifactId>mysql-connector-java</artifactId-->
+                        <!--groupId>com.mysql</groupId-->
+			<!--artifactId>mysql-connector-j</artifactId-->
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
                        	<scope>runtime</scope>
 		</dependency>
 		<dependency>
@@ -52,23 +54,22 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-<!--                
-                 Dependencia agregada para el login
+                <!-- Dependencia agregada para el login-->
                
                 <dependency>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-starter-security</artifactId>
-                    version>2.7.0</version
+                    <version>2.7.0</version>
                 </dependency>
 
                 
-                  Dependencia agregada para el login
+                <!-- Dependencia agregada para el login -->
                 
                 <dependency>
                     <groupId>io.jsonwebtoken</groupId>
                     <artifactId>jjwt</artifactId>
                     <version>0.9.1</version>
-                </dependency>-->
+                </dependency>
 
                 
 	</dependencies>
