@@ -47,6 +47,10 @@ public class Persona implements Serializable {
         this.apellido = apellido;
         this.descripcion = descripcion;
     }
+
+    public Persona(String nombre, String descripcion) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     
     //getter and setter
