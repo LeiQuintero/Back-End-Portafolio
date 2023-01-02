@@ -26,7 +26,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/educacion") //es la conexión con el service del front
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://frontportafolioleidy.web.app")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class CEducacion {
     @Autowired
     //llamamos al service
