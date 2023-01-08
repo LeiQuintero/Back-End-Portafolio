@@ -22,8 +22,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/personas")
-
-@CrossOrigin (origins = "http://localhost:4200") // poner el local host del VS
+@CrossOrigin(origins = "https://frontportafolioleidy.web.app:8080")
+//@CrossOrigin (origins = "http://localhost:4200") // poner el local host del VS
 
 public class PersonaController { /*El controlador llama al servicio, a la interface del servicio*/
     @Autowired
